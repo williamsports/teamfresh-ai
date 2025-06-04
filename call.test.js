@@ -7,9 +7,9 @@ const client = new twilio(
 
 client.calls
   .create({
-    url: 'https://teamfresh-ai.onrender.com', // 🔁 Byt ut mot din riktiga URL!
-    to: '+46735112146',         // 🔁 Ditt riktiga svenska nummer (börja med +46)
-    from: '+12513177962',       // ✅ Ditt Twilio-nummer (US)
+    url: 'https://teamfresh-ai.onrender.com',
+    to: '+46735112146',
+    from: '+12513177962',
   })
   .then(call => console.log('Samtal skickat! SID:', call.sid))
   .catch(error => console.error('Fel:', error));
